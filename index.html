@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kêylla Barbosa | Portfólio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0a0a0f;
+    --card:#14141d;
+    --text:#e7e7ea;
+    --muted:#9ca3af;
+    --accent:#34d399;
+    --border:rgba(255,255,255,.08);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Source Sans 3",sans-serif;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+    backdrop-filter:blur(16px);
+    background:rgba(10,10,15,.65);
+    border-bottom:1px solid var(--border);
+}
+
+.nav-container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    padding:18px;
+}
+
+nav a{
+    color:var(--text);
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:110px 20px 80px;
+}
+
+h1,h2,h3{
+    font-family:"Outfit",sans-serif;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    max-width:700px;
+    color:var(--muted);
+    margin:20px 0;
+}
+
+.buttons a{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:12px;
+    text-decoration:none;
+    margin-right:12px;
+    transition:.3s;
+}
+
+.primary{
+    background:var(--accent);
+    color:#000;
+}
+
+.secondary{
+    border:1px solid var(--border);
+    color:white;
+}
+
+section{
+    margin-top:100px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.skill{
+    padding:10px 16px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:999px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:28px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:var(--accent);
+}
+
+.grid{
+    display:grid;
+    gap:25px;
+}
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:50px 20px;
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(min-width:768px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-container">
+<strong>Kêylla Barbosa</strong>
+<div>
+<a href="#sobre">Sobre</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+</div>
+</div>
+</nav>
+
+<main class="container">
+
+<section class="hero hidden">
+<h1>Kêylla Barbosa</h1>
+<h2>Desenvolvedora Web em Formação | Estudante de Engenharia da Computação</h2>
+
+<p>
+Sou estudante de Engenharia da Computação e desenvolvo projetos práticos para aprimorar minhas habilidades em tecnologia.
+Busco minha primeira oportunidade para crescer profissionalmente e contribuir com soluções eficientes.
+</p>
+
+<div class="buttons">
+<a class="primary" href="#projetos">Ver Projetos</a>
+<a class="secondary" target="_blank" href="https://www.linkedin.com/in/k%C3%AAylla-barbosa-993974414/">LinkedIn</a>
+<a class="secondary" target="_blank" href="https://github.com/keyllaohms1-lgtm">GitHub</a>
+</div>
+</section>
+
+<section id="sobre" class="hidden">
+<h2>Sobre Mim</h2>
+<p style="margin-top:20px;color:var(--muted)">
+Tenho interesse em desenvolvimento web e estou construindo minha trajetória através de estudos, projetos pessoais e aprendizado contínuo.
+</p>
+
+<div class="skills">
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">Responsividade</div>
+</div>
+</section>
+
+<section id="projetos" class="hidden">
+<h2>Projetos</h2>
+
+<div class="grid" style="margin-top:30px">
+
+<div class="card">
+<h3>Site de Pizzaria</h3>
+<p style="margin:15px 0;color:var(--muted)">
+Landing page criada para praticar HTML, CSS e JavaScript com foco em design responsivo e experiência do usuário.
+</p>
+
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+</div>
+
+<p style="margin-top:20px">
+<a style="color:var(--accent)" target="_blank"
+href="https://github.com/keyllaohms1-lgtm/portifolio-projeto-site-de-pizzaria">
+Ver repositório
+</a>
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="hidden">
+<h2>Habilidades</h2>
+
+<div class="card" style="margin-top:25px">
+<h3>Conhecimentos</h3>
+<p style="color:var(--muted)">
+Possuo um vasto conhecimento em HTML5,CSS3 e JavaScript. Assim como também estou em busca de conhecimento na linguagem Java, para também agregar com projetos como por exemplo :sistemas de e-commerce, encurtadores de URL, e APIs de gerenciamento de tarefas (CRUDs).
+</p>
+</div>
+
+</section>
+
+<section id="contato" class="hidden">
+<h2>Contato</h2>
+<p style="margin-top:20px;color:var(--muted)">
+Aberta a oportunidades de estágio e posições júnior na área de tecnologia.
+<p>Email: keyllaohms1@gmail.com</p>     
+Telefone(WhatsApp):+55(98)987286973
+</p>
+</section>
+
+</main>
+
+<footer>
+Kêylla Barbosa • 2026
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".hidden").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
